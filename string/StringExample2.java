@@ -21,9 +21,6 @@ System.out.println(name==name3);
 System.out.println(name.equals(name3));
 System.out.println(name2==name4);
     
-    
-    
-
 }
 
 
