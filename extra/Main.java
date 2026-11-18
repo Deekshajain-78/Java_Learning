@@ -1,5 +1,4 @@
-package string;
-
+package extra;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -164,10 +163,9 @@ public class Main {
     static void displayGrades() {
         for (Student s : students) {
             System.out.println(
-                "Name: " + s.name +
-                " | Marks: " + s.marks +
-                " | Grade: " + s.getGrade()
-            );
+                    "Name: " + s.name +
+                            " | Marks: " + s.marks +
+                            " | Grade: " + s.getGrade());
         }
     }
 
@@ -222,4 +220,3 @@ public class Main {
         }
     }
 }
-
