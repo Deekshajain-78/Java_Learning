@@ -46,7 +46,6 @@ public class Main {
             c.join();
             a.start();
             b.start();
-          
     }
 
 }
