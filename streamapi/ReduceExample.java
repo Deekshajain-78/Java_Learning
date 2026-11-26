@@ -3,6 +3,8 @@ package streamapi;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.BinaryOperator;
+import java.util.function.BiFunction;
+import java.util.function.Consumer;
 import java.util.stream.Stream;
 
 public class ReduceExample {
@@ -23,6 +25,23 @@ public class ReduceExample {
         int sum2 = stream.reduce(0, (a, b) -> a + b);
         System.out.println(sum);
 
-    }
 
-}
+        //anno
+       
+        Consumer<Integer> consumer=new Consumer<>() {
+            public void accept(Integer a){
+                System.out.println(a);
+            }
+         };
+      
+
+
+        //lambda
+        Consumer<Integer> consumer1=(a)->System.out.println(a);
+        list.forEach(consumer1);
+
+        int sum3=list.stream().filter(n->n%2==0).map(n->n*n).reduce(0,(a,b)->a+b);
+        System.out.println(sum3);
+        }
+
+    }
